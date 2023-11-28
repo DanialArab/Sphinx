@@ -40,3 +40,5 @@ sphinx-build looks for sourcedir/conf.py for the configuration settings. sphinx-
 sphinx-build can create documentation in different formats. A format is selected by specifying the builder name on the command line; it defaults to HTML. Builders can also perform other tasks related to documentation processing. For a list of available builders, refer to Builders.
 
 By default, everything that is outdated is built. Output only for selected files can be built by specifying individual filenames.
+
++ Documenting objects
