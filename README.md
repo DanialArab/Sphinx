@@ -26,4 +26,6 @@ Some notes from https://www.sphinx-doc.org/en/master/usage/quickstart.html:
         * :ref:`modindex`
         * :ref:`search`
 
+You can now create the files you listed in the toctree and add content, and their section titles will be inserted (up to the maxdepth level) at the place where the toctree directive is placed. Also, Sphinx now knows about the order and hierarchy of your documents. (They may contain toctree directives themselves, which means you can create deeply nested hierarchies if necessary.)
+
 + 
