@@ -41,7 +41,7 @@ sphinx-build can create documentation in different formats. A format is selected
 
 By default, everything that is outdated is built. Output only for selected files can be built by specifying individual filenames.
 
-+ Documenting objects: 
++ Documenting objects:
 
         + Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
         
