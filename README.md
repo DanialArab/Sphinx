@@ -43,6 +43,6 @@ By default, everything that is outdated is built. Output only for selected files
 
 + Documenting objects
 
-+ Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
-
-+ methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
+        + Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
+        
+        + methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
