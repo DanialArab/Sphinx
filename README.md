@@ -32,5 +32,5 @@ You can now create the files you listed in the toctree and add content, and thei
 
   sphinx-build [options] <sourcedir> <outputdir> [filenames …]
 
-Description
-sphinx-build generates documentation from the files in <sourcedir> and places it in the <outputdir>.
+
+sphinx-build generates documentation from the files in sourcedir and places it in the outputdir.
