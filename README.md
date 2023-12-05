@@ -64,6 +64,9 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
 + sys.path: this is a list that contains directories where Python looks for modules to import. By default, it includes the current working directory and the standard library directories.
 + sys.path.insert(0, ...): this inserts the absolute path obtained from os.path.abspath("..") at the beginning (index 0) of the sys.path list. This means that Python will first look in the parent directory for modules before searching in other directories.
 
+5- now we need to generate HTML files:
+
+cd docs # here we have make.bat file we want to run that with HTML argument because we want to generate HTML 
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
