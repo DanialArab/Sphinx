@@ -3,6 +3,15 @@
 Questions:
 + Using sphinx we can transform the docstrings inside the functions inside the Python modules into HTML files. Does it mean i do need have docstrings? While Sphinx is a powerful tool for generating documentation from docstrings in Python code, having docstrings is not strictly mandatory. However, using docstrings is considered a best practice in Python, and it's highly recommended to include them in your code.
 + 
+
+
+Workflow:
+1- Sphinx comes with a script called **sphinx-quickstart** that sets up a source directory and creates a default conf.py with the most useful configuration values from a few questions it asks you. To use this, run:
+
+        sphinx-quickstart
+
+
+
 https://sphinx-themes.org/
 
 Some notes from https://www.sphinx-doc.org/en/master/usage/quickstart.html:
