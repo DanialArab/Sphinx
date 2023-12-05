@@ -70,7 +70,16 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
         .\make.bat html # this is for windows 
         sphinx-build -b html . _build/html # for wsl/ubuntu 
 
+6- I got an error that seems to be related to the fact that Django is trying to access the INSTALLED_APPS setting, but the Django settings are not configured. This is likely happening because when Sphinx attempts to import the admin module from your Django application during the documentation build, it doesn't have the necessary Django settings configured. To solve it I revised my conf.py file as follows:
 
+        import os
+        import sys
+        import django 
+        
+        sys.path.insert(0, os.path.abspath(".."))
+        
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'worldCountries.settings'
+        django.setup()
 
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
