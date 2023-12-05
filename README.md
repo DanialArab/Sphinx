@@ -83,7 +83,7 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
 
 the useful link that suggests the above solution: https://www.freecodecamp.org/news/sphinx-for-django-documentation-2454e924b3bc/
 
-7- Documenting objects: here
+7- Documenting objects: here  
 
 + 7.1 Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
 
@@ -95,7 +95,7 @@ the useful link that suggests the above solution: https://www.freecodecamp.org/n
 
 
 
-get backto these:
+get back to these:
 problem of not recognizing some modules an submodules can be solved using: 
 Run sphinx-apidoc with Recursive Option: Instead of running sphinx-apidoc -o docs ., try using the recursive option to make sure all subpackages and modules are included:
 sphinx-apidoc -o docs . --separate --force 
