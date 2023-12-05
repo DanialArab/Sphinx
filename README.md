@@ -66,7 +66,12 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
 
 5- now we need to generate HTML files:
 
-cd docs # here we have make.bat file we want to run that with HTML argument because we want to generate HTML 
+        cd docs # here we have make.bat file we want to run that with HTML argument because we want to generate HTML 
+        .\make.bat html # this is for windows 
+        sphinx-build -b html . _build/html # for wsl/ubuntu 
+
+
+
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
