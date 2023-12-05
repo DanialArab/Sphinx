@@ -54,12 +54,15 @@ You can now create the files you listed in the toctree and add content, and thei
         html_theme = 'sphinx-rtd-theme' # https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
         extensions = ["sphinx.ext.todo", "sphinx.ext.viewcode", "sphinx.ext.autocode"] # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
 
-also, we need to specify that sphinx uses the absolute path as the directory before the docs directory through:
+also, we need to get the absolute path of the **parent directory (..) of the current working directory** (which should be one level before docs directory which would be our project's main directory):
 
         import os
         import sys
         
-        sys.path.insert(0, os.path.abspath(".."))
+        sys.path.insert(0, os.path.abspath("..")) 
+        
++ sys.path: this is a list that contains directories where Python looks for modules to import. By default, it includes the current working directory and the standard library directories.
++ sys.path.insert(0, ...): this inserts the absolute path obtained from os.path.abspath("..") at the beginning (index 0) of the sys.path list. This means that Python will first look in the parent directory for modules before searching in other directories.
 
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
