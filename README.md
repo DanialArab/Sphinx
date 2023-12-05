@@ -49,6 +49,18 @@ You can now create the files you listed in the toctree and add content, and thei
 
 3- Make sure to include modules in the root document, index.rst.
 
+4- The info in the conf.py file has been populated when we ran sphinx-quickstart and based on the answers we provided to the questions. We can modify them like:
+
+        html_theme = 'sphinx-rtd-theme' # https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
+        extensions = ["sphinx.ext.todo", "sphinx.ext.viewcode", "sphinx.ext.autocode"] # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
+
+also, we need to specify that sphinx uses the absolute path as the directory before the docs directory through:
+
+        import os
+        import sys
+        
+        sys.path.insert(0, os.path.abspath(".."))
+
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
