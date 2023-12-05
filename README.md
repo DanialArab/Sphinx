@@ -6,16 +6,18 @@ Questions:
 
 
 Workflow:
-1- Sphinx comes with a script called **sphinx-quickstart** that sets up a source directory and creates a default conf.py with the most useful configuration values from a few questions it asks you. To use this, run:
 
+0- Create a directory called docs where all the documentation folders are stored
+                
+        cd root_directory_of_the_project
+        mkdir docs
+        
+1- Sphinx comes with a script called **sphinx-quickstart** that sets up a source directory and creates a default conf.py with the most useful configuration values from a few questions it asks you. To use this, in ther terminal run:
+
+        cd docs
         sphinx-quickstart
 
-
-
-https://sphinx-themes.org/
-
-Some notes from https://www.sphinx-doc.org/en/master/usage/quickstart.html:
-+ Let’s assume you’ve run sphinx-quickstart. It created a source directory with conf.py and a root document, index.rst. The main function of the root document, index.rst, is to serve as a welcome page, and to contain the root of the “table of contents tree” (or toctree). This is one of the main things that Sphinx adds to reStructuredText, a way to connect multiple files to a single hierarchy of documents. my index.rst:
+After running the sphinx-quickstart and answering a couple of questions, it creates a source directory with conf.py and a root document, index.rst. The main function of the root document, index.rst, is to serve as a welcome page, and to contain the root of the “table of contents tree” (or toctree). This is one of the main things that Sphinx adds to reStructuredText, a way to connect multiple files to a single hierarchy of documents. my index.rst:
 
         .. autodocs documentation master file, created by
            sphinx-quickstart on Mon Nov 27 13:59:12 2023.
@@ -40,6 +42,14 @@ Some notes from https://www.sphinx-doc.org/en/master/usage/quickstart.html:
 
 You can now create the files you listed in the toctree and add content, and their section titles will be inserted (up to the maxdepth level) at the place where the toctree directive is placed. Also, Sphinx now knows about the order and hierarchy of your documents. (They may contain toctree directives themselves, which means you can create deeply nested hierarchies if necessary.)
 
+2- 
+
+        cd .. # going to the main folder of the project 
+        sphinx-apidoc -o docs . # I need to specify the name of the folder (docs) I want to have output in, also with dot I indicate that I want to have all the documentation for my current directory 
+
+
+
+
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
   sphinx-build [options] <sourcedir> <outputdir> [filenames …]
@@ -58,3 +68,8 @@ By default, everything that is outdated is built. Output only for selected files
         + Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
         
         + methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
+
+References:
+https://sphinx-themes.org/
+
+https://www.sphinx-doc.org/en/master/usage/quickstart.html:
