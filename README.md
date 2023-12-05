@@ -83,13 +83,15 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
 
 the useful link that suggests the above solution: https://www.freecodecamp.org/news/sphinx-for-django-documentation-2454e924b3bc/
 
-7- Documenting objects:
+7- Documenting objects: here
 
 + 7.1 Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
 
   here
         
 + 7.2 methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
+
+
 
 
 
