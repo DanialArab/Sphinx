@@ -51,7 +51,7 @@ You can now create the files you listed in the toctree and add content, and thei
 
 4- The info in the conf.py file has been populated when we ran sphinx-quickstart and based on the answers we provided to the questions. We can modify them like:
 
-        html_theme = 'sphinx-rtd-theme' # https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
+        html_theme = 'sphinx_rtd_theme' # https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
         extensions = ["sphinx.ext.todo", "sphinx.ext.viewcode", "sphinx.ext.autodoc"] # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
 
 also, we need to get the absolute path of the **parent directory (..) of the current working directory** (which should be one level before docs directory which would be our project's main directory):
