@@ -47,7 +47,7 @@ You can now create the files you listed in the toctree and add content, and thei
         cd .. # going to the main folder of the project 
         sphinx-apidoc -o docs . # I need to specify the name of the folder (docs) I want to have output in, also with dot I indicate that I want to have all the documentation for my current directory 
 
-
+3- Make sure to include modules in the root document, index.rst.
 
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
