@@ -95,6 +95,16 @@ the useful link that suggests the above solution: https://www.freecodecamp.org/n
 
 
 
+get backto these:
+problem of not recognizing some modules an submodules can be solved using: 
+Run sphinx-apidoc with Recursive Option: Instead of running sphinx-apidoc -o docs ., try using the recursive option to make sure all subpackages and modules are included:
+sphinx-apidoc -o docs . --separate --force 
+
+cd docs
+BUT still some of them has no codes or source, will get back to it later. 
+
+
+
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
   sphinx-build [options] <sourcedir> <outputdir> [filenames …]
