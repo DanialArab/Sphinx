@@ -83,6 +83,14 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
 
 the useful link that suggests the above solution: https://www.freecodecamp.org/news/sphinx-for-django-documentation-2454e924b3bc/
 
+7- Documenting objects:
+
+7.1 + Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
+        
++ methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
+
+
+
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
   sphinx-build [options] <sourcedir> <outputdir> [filenames …]
@@ -96,11 +104,7 @@ sphinx-build can create documentation in different formats. A format is selected
 
 By default, everything that is outdated is built. Output only for selected files can be built by specifying individual filenames.
 
-+ Documenting objects:
 
-        + Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
-        
-        + methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
 
 References:
 https://sphinx-themes.org/
