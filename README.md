@@ -86,8 +86,10 @@ the useful link that suggests the above solution: https://www.freecodecamp.org/n
 7- Documenting objects:
 
 + 7.1 Class -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-class
+
+  here
         
-+ methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
++ 7.2 methods -- https://www.sphinx-doc.org/en/master/usage/domains/python.html#directive-py-method 
 
 
 
