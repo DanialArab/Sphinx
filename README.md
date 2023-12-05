@@ -81,6 +81,7 @@ also, we need to get the absolute path of the **parent directory (..) of the cur
         os.environ['DJANGO_SETTINGS_MODULE'] = 'worldCountries.settings'
         django.setup()
 
+the useful link that suggests the above solution: https://www.freecodecamp.org/news/sphinx-for-django-documentation-2454e924b3bc/
 
 + sphinx-build -- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 
