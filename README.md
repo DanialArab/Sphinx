@@ -3,6 +3,13 @@
 Questions:
 + Using sphinx we can transform the docstrings inside the functions inside the Python modules into HTML files. Does it mean i do need have docstrings? While Sphinx is a powerful tool for generating documentation from docstrings in Python code, having docstrings is not strictly mandatory. However, using docstrings is considered a best practice in Python, and it's highly recommended to include them in your code.
 + If we don't have Python function or class it seems that doc is not generated? Like for my urlpatterns first of all i need to put some docstrings in the code to be able to get them in the generated doc html file and second since the urls.py file contains a list and not a function it is not documented I mean there is no source code shown in the html file, if I want to have the source code i need to put the urlpatterns in a function.
++ How to exclude some files from being in the HTML document generated? like the followings under countries package: 
+
+  countries.migrations.0001_initial module
+    Migration
+      Migration.dependencies
+      Migration.initial
+      Migration.operations
 
 
 Workflow:
